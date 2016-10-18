@@ -14,7 +14,7 @@ public class AllLinksWorking {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://newtours.demoaut.com/");
-		
+		//Adding a comment 
 		WebElement table = driver.findElement(By.xpath("html/body/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr/td/table"));
 		
 		List<WebElement> links = table.findElements(By.tagName("a"));
